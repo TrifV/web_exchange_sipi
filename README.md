@@ -1,8 +1,5 @@
 # Spekulit — Веб-приложение прогнозирования курса ценных бумаг
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/YourUsername/Spekulit/ci.yml)
-![License](https://img.shields.io/github/license/YourUsername/Spekulit)
-
 ---
 
 ## Оглавление
