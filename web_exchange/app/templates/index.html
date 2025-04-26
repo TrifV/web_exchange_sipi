@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Spekulit</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="nav-item">Главная</a>
+    <a href="/settings" class="nav-item">Подбор настроек</a>
+  </nav>
+  <div class="container">
+    <h1>Spekulit</h1>
+    <form method="get" class="sort-form">
+      <button type="submit" name="sort" value="volatility_desc">По убыванию волатильности 🔽</button>
+      <button type="submit" name="sort" value="volatility_asc">По возрастанию волатильности 🔼</button>
+    </form>
+    {% for chart in charts %}
+      {% if chart.graph_html %}
+        <div class="chart">
+          <h2>{{ chart.security }} ({{ chart.volatility|round(2) }}%)</h2>
+          {{ chart.graph_html|safe }}
+        </div>
+      {% else %}
+        <h2>Нет данных по {{ chart.security }}</h2>
+      {% endif %}
+      <hr>
+    {% endfor %}
+  </div>
+</body>
+</html>

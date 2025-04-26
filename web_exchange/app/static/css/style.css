@@ -1,0 +1,52 @@
+/* Стили для навигации и оформления страницы */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  background-color: #343a40;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.nav-item {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.nav-item:hover, .nav-item.active {
+  background-color: #495057;
+}
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sort-form {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sort-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sort-form button:hover {
+  background-color: #0056b3;
+}
+.chart {
+  margin-bottom: 50px;
+}
