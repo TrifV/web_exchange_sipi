@@ -30,7 +30,7 @@
 | Фронтенд                  | HTML, CSS, JavaScript, Bootstrap               |
 | Работа с API              | requests                                       |
 | Визуализация графиков      | Plotly                                         |
-| База данных                | SQLite (прототип) / PostgreSQL / MySQL         |
+| База данных                | MySQL         |
 | CI/CD                      | GitHub Actions                                |
 
 ---
